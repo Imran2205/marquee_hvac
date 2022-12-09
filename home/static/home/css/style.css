@@ -583,6 +583,7 @@ h4 {
 }
 .card-content {
   padding: 3rem;
+  text-align: justify;
 }
 .card-header {
   font-family: bebas, "Poppins", sans-serif;
@@ -1225,7 +1226,7 @@ input[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 2.4rem;
     grid-auto-rows: minmax(100px, auto);
-
+    text-align: justify;
     justify-items: center;
   }
   .s-content img{
