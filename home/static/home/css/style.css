@@ -23,6 +23,7 @@
   --color-light-soft: #b6aeee;
   --color-dark-hard: #120d35;
   --color-dark-soft: #241a6a;
+  --color-primary: #4834d4;
 
   /* TEXT */
   --text-dark: #231f20;
@@ -225,6 +226,13 @@ h4 {
   text-align: center;
 }
 
+.space {
+  height: 10rem;
+}
+.header {
+  padding-top: 6.5rem;
+}
+
 .header__info-title {
   font-family: bebas, "Poppins", sans-serif;
   font-size: 6.4rem;
@@ -370,6 +378,102 @@ h4 {
   fill: var(--text-light);
 }
 
+.footer-custom {
+  width: 100%;
+  height: auto;
+  margin-top: 6rem;
+}
+
+.footer-custom-inner-div {
+  width: 100%;
+  height: auto;
+  background-color: #050505;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.footer-custom-inner-div-col-div-1 {
+  max-width: 25%;
+}
+
+.footer-custom-inner-div-col-div-1-a-1 {
+  font-size: 25px;
+  font-weight: 30;
+  color: whitesmoke !important;
+}
+
+.footer-custom-inner-div-col-div-1-a-2 {
+  font-size: 13px; font-weight: 100; color: whitesmoke !important;
+}
+
+.footer-custom-inner-div-col-div-1-inner-div {
+  width: 100%;
+}
+
+.footer-custom-inner-div-col-div-1-inner-div-inner-div {
+  float: left;
+}
+
+.footer-custom-inner-div-col-div-1-inner-div-inner-div-img {
+  width: 70px;
+  height: 70px;
+}
+
+.footer-custom-inner-div-col-div-1-inner-div-inner-div-2 {
+  margin-left: 80px;
+  padding-top: 20px;
+}
+
+.footer-custom-inner-div-col-div-1-inner-div-inner-div-2-a {
+  font-size: 18px;
+  font-weight: 300;
+  color: whitesmoke !important;
+}
+
+.footer-custom-inner-div-col-div-2 {
+  max-width: 25%;
+}
+
+.footer-custom-inner-div-col-div-2-a-1 {
+  font-size: 23px;
+  font-weight: 30;
+  color: whitesmoke !important;
+}
+
+.footer-custom-inner-div-col-div-2-a-2 {
+  font-size: 18px;
+  font-weight: 100;
+  color: whitesmoke !important;
+}
+
+.footer-custom-inner-div-col-div-3 {
+  max-width: 25%;
+}
+
+.footer-custom-inner-div-col-div-3-a-1 {
+  font-size: 23px;
+  font-weight: 30;
+  color: whitesmoke !important;
+}
+
+.footer-custom-inner-div-col-div-3-a-2 {
+  font-size: 16px;
+  font-weight: 100;
+  color: whitesmoke !important;
+}
+
+.footer-custom-inner-div-col-div-4 {
+  max-width: 25%;
+  text-align: center;
+}
+
+.footer-custom-inner-div-col-div-4-img {
+  width: 200px;
+  height: 200px;
+}
+
 /* resopnsive letest product */
 @media only screen and (max-width: 999px) {
   .product__header {
@@ -390,6 +494,15 @@ h4 {
   .letest__product .glide__arrow--right,
   .related__products .glide__arrow--right {
     right: 7%;
+  }
+  .footer-custom-inner-div {
+    width: 100%;
+    height: auto;
+    background-color: #050505;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -412,7 +525,7 @@ h4 {
     width: 100%;
     font-size: 1rem;
     padding: 0.8rem 0;
-    border: 1px solid var(--color-primaty);
+    border: 1px solid var(--color-primary);
   }
   .product ul {
     top: 25%;
@@ -513,6 +626,27 @@ h4 {
   color: var(--text-light);
 }
 @media only screen and (max-width: 846px) {
+  .footer-custom-inner-div-col-div-1 {
+    max-width: 100%;
+  }
+  .footer-custom-inner-div-col-div-2 {
+    max-width: 100%;
+  }
+  .footer-custom-inner-div-col-div-3 {
+    max-width: 100%;
+  }
+  .footer-custom-inner-div-col-div-4 {
+    max-width: 100%;
+  }
+  .footer-custom-inner-div {
+    width: 100%;
+    height: auto;
+    background-color: #050505;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   .text {
     font-size: 2.4rem;
   }
@@ -760,6 +894,10 @@ h4 {
     font-size: 2.2rem;
     line-height: 25px;
   }
+}
+
+.download {
+  padding-top: 10rem;
 }
 
 /* download Page */
@@ -1071,3 +1209,34 @@ input[type="submit"]:hover {
     margin-right: 0;
   }
 }
+
+  /* Service Design */
+  .service-content h2{
+    margin-top: 2.4rem;
+  }
+  .s-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.4rem;
+    grid-auto-rows: minmax(100px, auto);
+
+    justify-items: center;
+  }
+  .s-content img{
+    max-height: 300px;
+    width: auto;
+  }
+  @media (max-width: 627px) {
+    .s-content{
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  /* about us design */
+  .story-section{
+    width: 100%;
+    height: 30rem;
+    background: url('../images/service\ \(1\).jpg') no-repeat center;
+    background-size: cover;
+  }

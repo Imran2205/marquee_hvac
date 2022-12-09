@@ -23,4 +23,4 @@ def contact_us(request):
 def services(request):
     context = {
     }
-    return render(request, 'home/3d_printer_ui.html', context)
+    return render(request, 'home/services.html', context)

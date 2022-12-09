@@ -4,94 +4,69 @@
 {% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
-{% include "home/header.html" %}
-    <div class="site-content">
-        <div style="margin-bottom: 70px;">
-            <div id="map"></div>
+    {% include "home/header.html" %}
+    <div class="space"></div>
+    <h1 class="contactUs_title-text">Contact Us</h1>
+    <div class="contact__us-body">
+      <div class="contact-in">
+        <div class="contact-map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.82240266225!2d90.27924200137643!3d23.780887450522037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1623736873861!5m2!1sen!2sbd"
+            width="100%"
+            height="auto"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
         </div>
-        <div class="message-section">
-            <div class="message-section-inner-div">
-                <div class="row">
-                    <div class="col-md message-section-inner-div-col-div-1">
-                        <div class="message-section-inner-div-col-div-1-inner-div">
-                            <a class="message-section-inner-div-col-div-1-inner-div-a-1">
-                                Best air-condition manufacturer in Malaysia
-                            </a>
-                            <br>
-                            <br>
-                            <img class="message-section-inner-div-col-div-1-inner-div-img" src="{% static 'home/images/DSC_0420-300x200.jpg' %}">
-                            <br>
-                            <br>
-                            <a class="message-section-inner-div-col-div-1-inner-div-a-2">
-                                KENDO APPLIANCES MALAYSIA SDN BHD (1214573-D)
-                            </a>
-                            <br>
-                            <a class="message-section-inner-div-col-div-1-inner-div-a-3">
-                                20-3-2, JALAN SETIA PRIMA (Q) U13/Q
-                                SETIA ALAM, SEKSYEN U13
-                                40170 SHAH ALAM, SELANGOR D.E MALAYSIA
-                            </a>
-                            <br>
-                            <br>
-                            <div class="message-section-inner-div-col-div-1-inner-div-inner-div">
-                                <div class="message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-1">
-                                    <i class="fa fa-phone message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-1-i"></i>
-                                </div>
-                                <div class="message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-2">
-                                    <a class="message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-2-a">
-                                        +603-3343 0686
-                                    </a>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="message-section-inner-div-col-div-1-inner-div-inner-div">
-                                <div class="message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-1">
-                                    <i class="fa fa-fax message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-1-i"></i>
-                                </div>
-                                <div class="message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-2">
-                                    <a class="message-section-inner-div-col-div-1-inner-div-inner-div-inner-div-2-a">
-                                        +603 3343 2525
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md message-section-inner-div-col-div-2">
-                        <div class="message-section-inner-div-col-div-2-inner-div">
-                            <form>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Name</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
-                                </div>
-                                <br>
-                                <br>
-                                <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-                                </div>
-                                <br>
-                                <br>
-                                <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Message</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
-                                </div>
-                                <br>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Send</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+        <div class="contact-form">
+          <div class="contactUs">
+            <div class="home-contact__grid">
+              <div class="home-contact__gridItem center">
+                <h3 class="home__companyName">Company Name</h3>
+                <div class="contact__iconText">
+                  <i class="fa fa-map-marker"></i>
+                  <h3 class="a__text">the full address of the address</h3>
                 </div>
+                <div class="contact__iconText">
+                  <i class="fas fa-phone-alt"></i>
+                  <h3 class="a__text">+123456789</h3>
+                </div>
+              </div>
+              <div class="home-contact__gridItem">
+                <div class="home-form">
+                  <div class="row100">
+                    <div class="col">
+                      <div class="inputBox">
+                        <input type="text" name="name" required />
+                        <span class="ftext">Name</span>
+                        <span class="line"></span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="inputBox">
+                        <input type="email" name="email" required />
+                        <span class="ftext">Email</span>
+                        <span class="line"></span>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="inputBox textarea">
+                        <textarea required></textarea>
+                        <span class="ftext">Your Message</span>
+                        <span class="line"></span>
+                      </div>
+                    </div>
+                    <input type="submit" value="submit" />
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-
-    {% include "home/footer.html" %}
+      </div>
     </div>
-
-
-
+    {% include "home/footer.html" %}
 {% endblock content %}
 
 {% block js %}

@@ -19,30 +19,30 @@
         <div class="collapse navbar-collapse" id="main-nav">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#download">Download</a>
+              <a class="nav-link" href="{% url 'downloads' %}">Download</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
+              <a class="nav-link dropdown-toggle" href="{% url 'services' %}" id="navbarDropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">Service</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="{% url 'services' %}">Service 1</a></li>
+            <li><a class="dropdown-item" href="{% url 'services' %}">Service 2</a></li>
+            <li><a class="dropdown-item" href="{% url 'services' %}">Service 3</a></li>
           </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about-us">About Us</a>
+              <a class="nav-link" href="{% url 'about' %}">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact-us">Contact Us</a>
+              <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a class="nav-link" href="#login">Login</a>
-            </li>
+            </li>-->
           </ul>
         </div>
       </div>
     </nav>
-  </header>
+</header>

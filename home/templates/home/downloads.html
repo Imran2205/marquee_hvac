@@ -4,70 +4,58 @@
 {% load crispy_forms_tags %}
 {% load static %}
 {% block content %}
-{% include "home/header.html" %}
-    <div class="site-content">
-        <div style="margin-left: 70px; margin-right: 70px; padding-top: 30px;">
-            <div class="row">
-                <a style="font-weight: 50; font-size: 30px;">
-                    Catalogue(s)
-                </a>
+    {% include "home/header.html" %}
+    <section class="download">
+      <div class="home_container">
+        <div class="grid">
+          <div class="grid-item">
+            <div class="catalog">
+              <div class="catalog_img">
+                <img src="{% static 'home/images/service (1).jpg' %}" alt="" />
+              </div>
+              <h3 class="catalog_name">Catalog Name</h3>
+              <div class="catalog_download">
+                <button class="btn-download">Download</button>
+              </div>
             </div>
-            <div class="row" style="margin-top: 80px; margin-bottom: 80px;">
-                <div class="col-md" style="text-align: center; max-width: 33%;">
-                    <div>
-                        <img src="{% static 'home/images/Residential-Cover-150x150.jpg'%}">
-                        <br>
-                        <br>
-                        <a style="font-weight: 50; font-size: 15px; color: #0c5460">
-                            Residential Air Conditioner
-                        </a>
-                        <br>
-                        <br>
-
-                        <a class="transition-btn-rev-download" href="{% static 'home/pdfs/Wall-Mount.pdf'%}" download>
-                            Download
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md" style="text-align: center; max-width: 33%;">
-                    <div>
-                        <img src="{% static 'home/images/Light-Commercial-Cover-150x150.jpg' %}">
-                        <br>
-                        <br>
-                        <a style="font-weight: 50; font-size: 15px; color: #0c5460">
-                            Light Commercial Air Conditioner
-                        </a>
-                        <br>
-                        <br>
-                        <a class="transition-btn-rev-download" href="{% static 'home/pdfs/Light-Commercial.pdf'%}" download>
-                            Download
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md" style="text-align: center; max-width: 33%;">
-                    <div>
-                        <img src="{% static 'home/images/Commercial-Cover-150x150.png' %}">
-                        <br>
-                        <br>
-                        <a style="font-weight: 50; font-size: 15px; color: #0c5460">
-                            Commercial Air Conditioner
-                        </a>
-                        <br>
-                        <br>
-                        <a class="transition-btn-rev-download" href="{% static 'home/pdfs/Commercial.pdf'%}" download>
-                            Download
-                        </a>
-                    </div>
-                </div>
+          </div>
+          <div class="grid-item">
+            <div class="catalog">
+              <div class="catalog_img">
+                <img src="{% static 'home/images/service (2).jpg' %}" alt="" />
+              </div>
+              <h3 class="catalog_name">Catalog Name</h3>
+              <div class="catalog_download">
+                <button class="btn-download">Download</button>
+              </div>
             </div>
+          </div>
+          <div class="grid-item">
+            <div class="catalog">
+              <div class="catalog_img">
+                <img src="{% static 'home/images/service (3).jpg' %}" alt="" />
+              </div>
+              <h3 class="catalog_name">Catalog Name</h3>
+              <div class="catalog_download">
+                <button class="btn-download">Download</button>
+              </div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <div class="catalog">
+              <div class="catalog_img">
+                <img src="{% static 'home/images/service (3).jpg' %}" alt="" />
+              </div>
+              <h3 class="catalog_name">Catalog Name</h3>
+              <div class="catalog_download">
+                <button class="btn-download">Download</button>
+              </div>
+            </div>
+          </div>
         </div>
-
-
+      </div>
+    </section>
     {% include "home/footer.html" %}
-    </div>
-
-
-
 {% endblock content %}
 
 {% block js %}
